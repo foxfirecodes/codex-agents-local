@@ -1,0 +1,29 @@
+{
+  "name": "codex-agents-local",
+  "version": "0.1.0",
+  "description": "Loads applicable AGENTS.local.md instructions into Codex tasks.",
+  "author": {
+    "name": "codex-agents-local contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "agents",
+    "hooks",
+    "productivity"
+  ],
+  "interface": {
+    "displayName": "Codex Agents Local",
+    "shortDescription": "Loads applicable AGENTS.local.md instructions.",
+    "longDescription": "Loads applicable AGENTS.local.md files into session and subagent context.",
+    "developerName": "codex-agents-local contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Hooks",
+      "Context"
+    ],
+    "defaultPrompt": [
+      "Start a task with local agent context."
+    ]
+  }
+}

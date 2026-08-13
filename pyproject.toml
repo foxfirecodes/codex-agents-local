@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-agents-local"
+version = "0.1.0"
+description = "Local lifecycle hooks for Codex agent tasks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "codex-agents-local contributors" }
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/src/hook.py\"",
+            "additionalContextLimit": 10000,
+            "statusMessage": "Loading AGENTS.local.md"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/src/hook.py\"",
+            "additionalContextLimit": 10000,
+            "statusMessage": "Loading AGENTS.local.md"
+          }
+        ]
+      }
+    ]
+  }
+}

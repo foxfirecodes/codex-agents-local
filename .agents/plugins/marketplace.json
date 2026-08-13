@@ -1,0 +1,20 @@
+{
+  "name": "codex-agents-local",
+  "interface": {
+    "displayName": "Codex Agents Local"
+  },
+  "plugins": [
+    {
+      "name": "codex-agents-local",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-agents-local"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
